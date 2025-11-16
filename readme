@@ -1,0 +1,114 @@
+# Blueprint3D
+
+A customizable 3D interior design application built on three.js that allows users to design interior spaces such as homes or apartments.
+
+## See it
+
+This repository includes an example application built using blueprint3d:
+
+### [Live Demo](http://furnishup.github.io/blueprint3d/example/)
+
+## What is this?
+
+This is a customizable application built on three.js that allows users to design an interior space such as a home or apartment. Below are screenshots from our Example App.
+
+## Features
+
+- **2D Floorplan Editor** - Create and edit floor plans interactively
+- **3D Visualization** - View and modify your design in real-time 3D
+- **Item Placement** - Add and arrange furniture and items in your space
+- **Customizable** - Built as a modular library for easy integration
+
+## Screenshots
+
+### 1) Create 2D Floorplan
+
+![floorplan](./picture/Screenshot%202025-11-16%20133516.png)
+
+### 2) Add Items
+
+![add_items](./picture/Screenshot%202025-11-16%20133523.png)
+
+### 3) Design in 3D
+
+![3d_design](./picture/Screenshot%202025-11-16%20133540.png)
+
+### 4) Final Visualization
+
+![final_result](./picture/Screenshot%202025-11-16%20133716.png)
+
+## Developing and Running Locally
+
+### Prerequisites
+
+- Node.js (npm >= 3)
+- Grunt CLI installed globally
+
+### Setup
+
+To get started, clone the repository and ensure you have npm >= 3 and grunt installed, then run:
+
+```bash
+npm install
+grunt
+```
+
+The `grunt` command generates `example/js/blueprint3d.js` from the TypeScript sources in `src/`.
+
+### Running Locally
+
+The easiest way to run locally is to run a local server from the `example` directory:
+
+```bash
+cd example
+
+# Python 3.x
+python -m http.server
+
+# Python 2.x
+python -m SimpleHTTPServer
+```
+
+Then, visit `http://localhost:8000` in your browser.
+
+## Project Structure
+
+### `src/` Directory
+
+The `src` directory contains the core of the project:
+
+- **`core/`** - Basic utilities such as logging and generic functions
+- **`floorplanner/`** - 2D view/controller for editing the floorplan
+- **`items/`** - Various types of items that can go in rooms
+- **`model/`** - Data model representing both the 2D floorplan and all of the items in it
+- **`three/`** - 3D view/controller for viewing and modifying item placement
+
+### `example/` Directory
+
+The example directory contains a complete application built using the core blueprint3d JavaScript building blocks. It includes HTML, CSS, models, textures, and integration code.
+
+## Contributing
+
+This project requires a lot more work. In general, it was rushed through various prototype stages and never refactored as much as it probably should be. We need your help!
+
+Please contact us if you are interested in contributing.
+
+### Todos
+
+- More complete documentation (based on the TypeDoc comments)
+- Test suite (e.g. jasmine)
+- Make it easier to build a complete application using blueprint3d (cleaner API, more inclusive base, easier integration with a backend)
+- Better serialization format for saving/loading "designs"
+- Remove the dependency on jquery from the core source!
+- Better use of npm conventions and packaging
+- Various bug fixes
+- Refactor three/* - use of classes, lambdas
+- Update to current three.js
+- Introduce a more formal persistency format
+- Put all relevant settings into Core.Configuration to make them read-/writable
+- Complete type docs for all entities
+- Fix all TODO_Ekki comments
+
+## License
+
+This project is open-source! See [LICENSE.txt](./LICENSE.txt) for more information.

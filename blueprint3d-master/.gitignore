@@ -1,0 +1,14 @@
+*.sublime-workspace
+node_modules
+static
+*.DS_Store
+build
+*.sublime-project
+*.log
+
+.vscode
+bin
+doc
+dist
+example/js/blueprint3d.js
+example/js/three.min.js
