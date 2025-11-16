@@ -7,6 +7,18 @@ A customizable 3D interior design application built on three.js that allows user
 This repository includes an example application built using blueprint3d:
 
 Demo video
+## 🎥 Live Demo Video
+
+Watch the application in action:
+
+https://github.com/nilay2004/SmartSpace/assets/videos/screen-capture%20(10).webm
+
+Or view it directly:
+
+<video width="100%" controls>
+  <source src="./screen-capture%20(10).webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 
 ## What is this?
